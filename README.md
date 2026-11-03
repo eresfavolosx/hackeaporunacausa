@@ -1,86 +1,38 @@
-# Hackea por una Causa — Youth Mentorship & Scheduling App
+# Hackea por una Causa — Civic Co-Creation & Youth Mentorship Hub
 
 [![Live](https://img.shields.io/badge/site-hackea.novu.works-0f172a?style=flat-square)](https://hackea.novu.works)
-![React](https://img.shields.io/badge/React%2015-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Express-339933?style=flat-square&logo=node.js&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 
-*Read in Spanish below · [Versión en español](#-español)*
+> *"How can we gather engineers, artists, and mentors into a shared digital commons to build life-changing civic prototypes with Puerto Rico's youth?"*
 
-Built at the **Hackea por una Causa** social-impact hackathon in Puerto Rico (2017). The app **recruits professional mentors and schedules their sessions with at-risk youth** at Boys & Girls Clubs and community centers across the island.
-
-> **▶ Project site:** **[hackea.novu.works](https://hackea.novu.works)** · Part of the [NovuWorks portfolio](https://novu.works)
+**Live Interactive Prototype:** **[hackea.novu.works](https://hackea.novu.works)** · [Explore on Novu Works](https://novu.works/#hackeaporunacausa)  
+**Maker:** **Fabián Vélez Vicente** (`@eresfavolosx`)
 
 ---
 
-## The Problem
+## 🌍 The Concept
+Born at the **Hackea por una Causa** civic hackathon in Puerto Rico, this project was created out of optimism and collective care. Community centers and Boys & Girls Clubs across the island needed an intuitive way to connect professionals, artists, and engineers with at-risk youth for hands-on mentorship. We asked: *what if finding and scheduling a mentorship session felt as inviting and effortless as joining a neighborhood creative studio?*
 
-Community centers serving at-risk youth struggle to **find, vet, and schedule** volunteer mentors. Coordination ran on phone calls and spreadsheets. Mentors didn't know where they were needed, and centers couldn't plan.
+---
 
-## The Solution
+## ⚙️ The Technology
+- **Full-Stack Interactive Scheduling Canvas:** Engineered with **React**, **Redux**, **Node.js / Express**, and **MongoDB** to coordinate mentor skills, youth curiosity tracks, and community center calendars in real time.
+- **Disaster-Resilient Web Portal (`hackea.novu.works`):** Paired with a lightweight, zero-dependency bilingual showcase hosted on **Firebase Edge Hosting** that loads instantaneously even on constrained mobile connections.
 
-| Feature | Description |
-| --- | --- |
-| **Institutions directory** | Browse participating centers (Boys & Girls Clubs of Puerto Rico and others) |
-| **Appointments** | Mentors book sessions; centers see who is coming and when |
-| **Appointment details** | Session info, location, and mentor/institution context |
-| **Mentor profiles** | Professional background and participation history |
-| **REST API** | Express + Mongoose backend with models, controllers, and routes |
+---
 
-## Tech Stack
+## 🌱 The Impact
+- Replaced fragmented phone trees and paper spreadsheets with a warm, transparent community hub—mobilizing mentors and student makers across Puerto Rico to learn, imagine, and build together.
 
-- **Frontend:** React 15, Redux (custom reducer factory and middleware), React Router 4, SCSS modules, Flow, ESLint/Stylelint
-- **Backend:** Node.js, Express, Mongoose/MongoDB, body-parser, CORS
-- **Tooling:** Babel, PostCSS, nodemon
+---
 
-## Running Locally
+## 🚀 Quick Start (Open-Source Experiment)
 
 ```bash
 git clone https://github.com/eresfavolosx/hackeaporunacausa.git
 cd hackeaporunacausa
-
-# API
-npm install
-npm run server            # Express + MongoDB (set your Mongo URI)
-
-# Client
-cd app
-cp .env.example .env
 npm install
 npm start
 ```
-
-## Project Structure
-
-```text
-├── index.js            # Express server entry
-├── models/             # Mongoose schemas
-├── controllers/        # Request handlers
-├── routes/             # API routes
-└── app/                # React + Redux client
-    └── src/
-        ├── pages/      # App, Institutions, Appointments, AppointmentDetails, Profile
-        ├── components/ # Shared UI (Footer, ...)
-        └── helpers/    # Reducer factory, middleware, UI state
-```
-
-## Team
-
-Built during the hackathon by:
-
-- **Fabián Vélez Vicente** ([@eresfavolosx](https://github.com/eresfavolosx))
-- Luis Betancourt
-- Leonardo Calderón
-- Ryan González
-- Arturo Santiago
-
-> Forked from the team repository [`leodrez/hackeaporunacausa`](https://github.com/leodrez/hackeaporunacausa).
-
----
-
-## 🇵🇷 Español
-
-**Proyecto:** App para reclutamiento y calendarización de mentores profesionales para jóvenes en riesgo, desarrollada durante el hackatón *Hackea por una Causa* en Puerto Rico.
-
-**Miembros:** Fabián Vélez · Luis Betancourt · Leonardo Calderón · Ryan González · Arturo Santiago
